@@ -1,0 +1,326 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+	"#ifdef _WIN32\r\n"
+	"LANGUAGE 4, 2\r\n"
+	"#pragma code_page(936)\r\n"
+	"#endif //_WIN32\r\n"
+	"#include ""res\\pos.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+	"#include ""l.chs\\afxres.rc""  	// Standard components\r\n"
+	"#endif\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\pos.ico"
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 pos"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "pos 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_POS_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "pos"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,260,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,260,23,50,14
+    COMBOBOX        IDC_COMBO1,58,73,185,103,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+DLG_POSINFO DIALOGEX 0, 0, 381, 283
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "POS交易控制中心"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        EDT_FLD_00,80,75,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "00 : 信息码(4)",IDC_STATIC,5,77,71,10
+    GROUPBOX        "对应的十六进制报文",IDC_STATIC,0,0,380,54
+    GROUPBOX        "",IDC_STATIC,1,54,379,203
+    EDITTEXT        EDT_FLD_01,80,88,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "01 : 位元表(16)",IDC_STATIC,5,90,71,10
+    EDITTEXT        EDT_FLD_02,80,102,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "02 : 主帐号(20)",IDC_STATIC,5,104,71,10
+    EDITTEXT        EDT_FLD_03,80,114,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "03 : 处理码",IDC_STATIC,5,116,71,10
+    EDITTEXT        EDT_FLD_04,80,127,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "04 : 交易额",IDC_STATIC,5,129,71,10
+    EDITTEXT        EDT_FLD_11,80,140,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "11 : 系统流水号",IDC_STATIC,5,142,71,10
+    EDITTEXT        EDT_FLD_12,80,154,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "12 : 时间",IDC_STATIC,5,156,71,10
+    EDITTEXT        EDT_FLD_13,80,167,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "13 : 日期",IDC_STATIC,5,169,71,10
+    EDITTEXT        EDT_FLD_14,80,180,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "14 : 失效期",IDC_STATIC,5,182,71,10
+    EDITTEXT        EDT_FLD_22,80,193,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "22 : 输入方式",IDC_STATIC,5,195,71,10
+    EDITTEXT        EDT_FLD_25,80,216,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "25 : POS终端状态码",IDC_STATIC,5,218,71,10
+    EDITTEXT        EDT_FLD_35,80,229,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "35 : 2磁道内容",IDC_STATIC,5,231,71,10
+    EDITTEXT        EDT_FLD_36,80,243,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "36 : 3磁道内容",IDC_STATIC,5,245,71,10
+    EDITTEXT        EDT_FLD_37,263,85,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "37 : 系统参考号",IDC_STATIC,195,87,56,10
+    EDITTEXT        EDT_FLD_38,263,98,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "38 ：授权码",IDC_STATIC,195,100,56,10
+    EDITTEXT        EDT_FLD_39,263,112,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "39 ：响应码",IDC_STATIC,195,114,56,10
+    EDITTEXT        EDT_FLD_41,263,124,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "41 ：终端号",IDC_STATIC,195,126,56,10
+    EDITTEXT        EDT_FLD_42,263,137,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "42 ：商户号",IDC_STATIC,195,139,56,10
+    EDITTEXT        EDT_FLD_48,263,150,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "48 ：受款帐号",IDC_STATIC,195,152,56,10
+    EDITTEXT        EDT_FLD_52,263,164,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "52 ：个人密码",IDC_STATIC,195,166,56,10
+    EDITTEXT        EDT_FLD_54,308,177,65,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "54 ：查询金额或存款之手续费",IDC_STATIC,195,179,109,10
+    EDITTEXT        EDT_FLD_60,263,190,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "60 ：上送资料",IDC_STATIC,195,192,56,10
+    EDITTEXT        EDT_FLD_61,263,203,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "61 ：操作员密码",IDC_STATIC,195,205,63,10
+    EDITTEXT        EDT_FLD_62,263,216,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "62 ：撤消流水号",IDC_STATIC,195,218,66,10
+    EDITTEXT        EDT_FLD_63,263,229,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "63 ：交易帐号",IDC_STATIC,195,231,56,10
+    EDITTEXT        EDT_FLD_64,263,243,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "64 ：MAC",IDC_STATIC,195,245,56,10
+    EDITTEXT        EDT_DIRAM,3,10,371,12,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    GROUPBOX        "",IDC_STATIC,2,254,378,22
+    PUSHBUTTON      "发送",BTN_SEND,4,261,42,12,BS_FLAT
+    PUSHBUTTON      "接受",BTN_RECV,46,261,42,12,BS_FLAT
+    PUSHBUTTON      "选项",BTN_OPTION,88,261,42,12,BS_FLAT
+    PUSHBUTTON      "生成",BTN_GENERATE,129,261,42,12,BS_FLAT
+    PUSHBUTTON      "解析",BTN_PARS,170,261,42,12,BS_FLAT
+    PUSHBUTTON      "监听",BTN_LSTN,210,261,42,12,BS_FLAT
+    PUSHBUTTON      "断开",BTN_DISCONNECT,252,261,42,12,BS_FLAT
+    PUSHBUTTON      "帮助",BTN_HLP,294,261,42,12,BS_FLAT
+    PUSHBUTTON      "退出",BTN_EXIT,336,261,42,12,BS_FLAT
+    EDITTEXT        EDT_FLD_F2,80,62,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "-2 :  长度",IDC_STATIC,5,64,71,10
+    EDITTEXT        EDT_FLD_F1,263,72,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "-1 :   网控器报文头",IDC_STATIC,195,74,66,10
+    EDITTEXT        EDT_PROMPT,82,39,292,12,ES_AUTOHSCROLL
+    LTEXT           "ASCII码显示",IDC_STATIC,31,41,43,10
+    EDITTEXT        EDT_DIRAM2,3,24,371,12,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    CONTROL         "写",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,
+                    41,24,8
+    EDITTEXT        EDT_FLD_24,80,205,110,12,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "24 : ******",IDC_STATIC,5,207,71,10
+END
+
+DLG_OPTION DIALOG DISCARDABLE  0, 0, 260, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,203,11,50,22
+    PUSHBUTTON      "Cancel",IDCANCEL,203,33,50,22
+    CONTROL         "IPAddress1",IP_POS,"SysIPAddress32",WS_TABSTOP,76,19,82,
+                    10
+    LTEXT           "IP地址",IDC_STATIC,14,19,59,9
+    GROUPBOX        "POSP",IDC_STATIC,7,7,195,48
+    LTEXT           "端口",IDC_STATIC,14,33,59,9
+    EDITTEXT        EDT_PORT,76,32,36,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "080404B0"
+		BEGIN 
+			VALUE "CompanyName",     "\0"
+			VALUE "FileDescription", "pos Microsoft 基础类应用程序\0"
+			VALUE "FileVersion",     "1, 0, 0, 1\0"
+			VALUE "InternalName",    "pos\0"
+			VALUE "LegalCopyright",  "版权所有 (C) 2019\0"
+			VALUE "LegalTrademarks", "\0"
+			VALUE "OriginalFilename","pos.EXE\0"
+			VALUE "ProductName",     "pos 应用程序\0"
+			VALUE "ProductVersion",  "1, 0, 0, 1\0"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x0804, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+    IDD_POS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN,193 
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 pos(&A)..."
+END
+#endif
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\\pos.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\\afxres.rc"  	// Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
