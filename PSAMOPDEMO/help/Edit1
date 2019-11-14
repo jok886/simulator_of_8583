@@ -1,0 +1,67 @@
+UINT FileChangeWatch(LPVOID lpParam)
+{
+	CFileChangeDoc* pDoc=(CFileChangeDoc*)lpParam;
+	ASSERT(pDoc);
+	
+	CFile* pFile = pDoc->GetFile(pDoc->GetPathName(),
+		CFile::modeRead|CFile::shareDenyWrite,NULL);	
+	ASSERT(pFile);
+	if(pFile)
+	{
+		// 保存上次写文件的时间
+		FILETIME ftLastWriteTime;
+		BY_HANDLE_FILE_INFORMATION fileinfo;
+		if(!GetFileInformationByHandle((HANDLE)pFile->m_hFile,&fileinfo))
+			return 0;
+		ftLastWriteTime=fileinfo.ftLastWriteTime;
+		pDoc->ReleaseFile(pFile,FALSE);	
+		
+		// 分离文件路径
+		char path[_MAX_PATH];
+		_splitpath(pDoc->GetPathName(), NULL, path, NULL, NULL);
+		while(1)
+		{
+			// 获取文件更改通知句柄
+			HANDLE hFileChanged=FindFirstChangeNotification(path,FALSE,
+				FILE_NOTIFY_CHANGE_LAST_WRITE|
+				FILE_NOTIFY_CHANGE_SIZE|
+				FILE_NOTIFY_CHANGE_FILE_NAME);
+			
+			HANDLE hWaitEvents[]={pDoc->m_evStopWatch,hFileChanged};
+			// 等待文件更改通知或停止监视事件
+			DWORD dwResult=
+				WaitForMultipleObjects(2,hWaitEvents,FALSE,INFINITE);
+			FindCloseChangeNotification(hFileChanged);	
+			
+			if(dwResult==WAIT_OBJECT_0+1)
+			{
+				// 获取文件的保存时间
+				pFile = pDoc->GetFile(pDoc->GetPathName(),
+					CFile::modeRead|CFile::shareDenyWrite,NULL);	
+				if(pFile)
+				{
+					if(GetFileInformationByHandle((HANDLE)pFile->m_hFile,
+						&fileinfo))
+					{
+						// 判断文件是否已更改
+						if((ftLastWriteTime.dwHighDateTime+
+							ftLastWriteTime.dwLowDateTime)!=
+							(fileinfo.ftLastWriteTime.dwHighDateTime+
+							fileinfo.ftLastWriteTime.dwLowDateTime))
+							pDoc->OnFileAlarm(FA_WRITTEN);
+						// 保存修改时间
+						ftLastWriteTime=fileinfo.ftLastWriteTime;
+					}
+					pDoc->ReleaseFile(pFile,FALSE);
+				}
+				else	// 文件不存在，已被删除或移动
+				{
+					pDoc->OnFileAlarm(FA_FILELOST);
+				}
+			}
+			else
+				break;
+		}
+	}
+	return 0;
+}

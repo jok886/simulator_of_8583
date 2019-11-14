@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY bgcolor=Salmon>
+
+<UL><STRONG><FONT color=darkred>PSAM卡术语</FONT></STRONG>
+ 
+<li>卡片主控密钥CMK 
+  <LI>应用主控密钥 AMK
+  <LI>应用主工作密钥AWK 
+  <LI>卡片序列号SID</LI></UL>
+  <UL><STRONG><FONT color=crimson>加密机术语</FONT></STRONG>
+ 
+<li>终端主密钥 TMK 
+  <LI>传输密钥 TPK&gt;&lt; /LI&gt;< /LI></UL>
+
+<hr>
+<OL><LI>CMK------用以维护AMK,存放在PSAM卡根目录下的类型未05的密钥文件中.
+  <LI>AMK------用以维护AWK,存放在应用目录HDSY1目录下类型未C5的密钥文件中.应该与加密机的TPK一致.
+  <LI>AWK------在实际运行中，使用支付网关传递的8位随机数，分散出会话密钥，对终端用户输入的需要安全保护的数据进行加密上送。
+  <LI>SID-------作为加密机的TMK分散出每一张卡的AWK的分散因子.
+  <LI>TMK------终端主应用密钥,实际运行中,将根据SID,随机数来生成当前会话密钥,对相关的加密信息,转换到前置需要的格式.
+  <LI>TPK------产生安全报文,来发行PSAM卡.应该与PSAM卡的AMK一致.</LI></OL>
+</BODY>
+</HTML>
