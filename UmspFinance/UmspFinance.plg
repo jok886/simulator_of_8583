@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UmspFinance - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/UmspFinance.res" /d "_DEBUG" /d "_AFXDLL" "C:\atm\UmspFinance\UmspFinance\UmspFinance.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP598A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/UmspFinance.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\atm\UmspFinance\UmspFinance\ChildFrm.cpp"
+"C:\atm\UmspFinance\UmspFinance\Des.cpp"
+"C:\atm\UmspFinance\UmspFinance\EncryptorRelate.cpp"
+"C:\atm\UmspFinance\UmspFinance\HDSYC8583Digram.cpp"
+"C:\atm\UmspFinance\UmspFinance\MainFrm.cpp"
+"C:\atm\UmspFinance\UmspFinance\TransLogDoc.cpp"
+"C:\atm\UmspFinance\UmspFinance\TransLogView.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspAdap.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspCliAdap.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspEBAdap.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspEBTrans.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspEnvironment.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspFinance.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspFinanceDoc.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspFinanceView.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspFormat.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspInitEnv.cpp"
+"C:\atm\UmspFinance\UmspFinance\UmspPOSPAdap.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP598A.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP598B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/UmspFinance.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\atm\UmspFinance\UmspFinance\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP598B.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP598C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/UmspFinance.pdb" /debug /machine:I386 /out:"Debug/UmspFinance.exe" /pdbtype:sept 
+.\Debug\ChildFrm.obj
+.\Debug\Des.obj
+.\Debug\EncryptorRelate.obj
+.\Debug\HDSYC8583Digram.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\TransLogDoc.obj
+.\Debug\TransLogView.obj
+.\Debug\UmspAdap.obj
+.\Debug\UmspCliAdap.obj
+.\Debug\UmspEBAdap.obj
+.\Debug\UmspEBTrans.obj
+.\Debug\UmspEnvironment.obj
+.\Debug\UmspFinance.obj
+.\Debug\UmspFinanceDoc.obj
+.\Debug\UmspFinanceView.obj
+.\Debug\UmspFormat.obj
+.\Debug\UmspInitEnv.obj
+.\Debug\UmspPOSPAdap.obj
+.\Debug\UmspFinance.res
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP598C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+Des.cpp
+EncryptorRelate.cpp
+HDSYC8583Digram.cpp
+MainFrm.cpp
+TransLogDoc.cpp
+TransLogView.cpp
+UmspAdap.cpp
+UmspCliAdap.cpp
+UmspEBAdap.cpp
+UmspEBTrans.cpp
+UmspEnvironment.cpp
+UmspFinance.cpp
+UmspFinanceDoc.cpp
+UmspFinanceView.cpp
+UmspFormat.cpp
+UmspInitEnv.cpp
+UmspPOSPAdap.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+UmspFinance.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

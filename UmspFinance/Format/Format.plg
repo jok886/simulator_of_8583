@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Format - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP81C9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Format.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\atm\UmspFinance\UmspFinance\Format\AddDlg.cpp"
+"C:\atm\UmspFinance\UmspFinance\Format\Format.cpp"
+"C:\atm\UmspFinance\UmspFinance\Format\FormatDoc.cpp"
+"C:\atm\UmspFinance\UmspFinance\Format\FormatView.cpp"
+"C:\atm\UmspFinance\UmspFinance\Format\HDSYC8583Digram.cpp"
+"C:\atm\UmspFinance\UmspFinance\Format\MainFrm.cpp"
+"C:\atm\UmspFinance\UmspFinance\Format\MsgDetailDlg.cpp"
+"C:\atm\UmspFinance\UmspFinance\Des.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP81C9.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP81CA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Format.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\atm\UmspFinance\UmspFinance\Format\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP81CA.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+AddDlg.cpp
+Format.cpp
+FormatDoc.cpp
+FormatView.cpp
+HDSYC8583Digram.cpp
+MainFrm.cpp
+MsgDetailDlg.cpp
+Des.cpp
+Generating Code...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP83EE.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Format.pdb" /debug /machine:I386 /out:"Debug/Format.exe" /pdbtype:sept 
+.\Debug\AddDlg.obj
+.\Debug\Format.obj
+.\Debug\FormatDoc.obj
+.\Debug\FormatView.obj
+.\Debug\HDSYC8583Digram.obj
+.\Debug\MainFrm.obj
+.\Debug\MsgDetailDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\Format.res
+.\Debug\Des.obj
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP83EE.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Format.bsc"  .\Debug\StdAfx.sbr .\Debug\AddDlg.sbr .\Debug\Format.sbr .\Debug\FormatDoc.sbr .\Debug\FormatView.sbr .\Debug\HDSYC8583Digram.sbr .\Debug\MainFrm.sbr .\Debug\MsgDetailDlg.sbr .\Debug\Des.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Format.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
