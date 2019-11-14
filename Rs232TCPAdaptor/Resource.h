@@ -1,0 +1,127 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by Rs232TCPAdaptor.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_RS232TCPADAPTOR_DIALOG      102
+#define IDP_SOCKETS_INIT_FAILED         103
+#define IDR_MAINFRAME                   128
+#define IDR_MENU1                       129
+#define DLG_VIEW_MSG                    131
+#define DLG_SETTING                     132
+#define IDD_DIALOG1                     133
+#define IDD_bitmap                      134
+#define IDD_COMMOND_DIALOG              135
+#define IDD_des                         136
+#define IDC_LIST1                       1000
+#define IDC_MSCOMM3                     1003
+#define IDC_EDIT1                       1004
+#define CMB_MSG                         1005
+#define IDC_RESPOND                     1005
+#define CMB_ROUTE                       1006
+#define IDC_COMMAND                     1007
+#define IDC_IP                          1007
+#define BTN_ADD                         1008
+#define BTN_SEND                        1009
+#define EDT_RESULT                      1009
+#define EDT_BITS                        1010
+#define EDT_INDATA                      1011
+#define BTN_GEN                         1013
+#define BTN_PARSEL                      1014
+#define IDC_PORT                        1015
+#define BTN_ENCRY                       1016
+#define BTN_ENCODE                      1017
+#define EDT_KEY                         1018
+#define EDT_SRC                         1019
+#define EDT_TAG                         1020
+#define IDS_STRING5821                  5821
+#define IDS_STRING5822                  5822
+#define IDS_STRING5823                  5823
+#define IDS_STRING5824                  5824
+#define IDS_STRING5825                  5825
+#define IDS_STRING5826                  5826
+#define IDS_STRING5827                  5827
+#define IDS_STRING5828                  5828
+#define IDS_STRING5829                  5829
+#define IDS_STRING5830                  5830
+#define IDS_STRING5831                  5831
+#define IDS_STRING5832                  5832
+#define IDS_STRING5833                  5833
+#define IDS_STRING5834                  5834
+#define IDS_STRING5835                  5835
+#define IDS_STRING5836                  5836
+#define IDS_STRING5837                  5837
+#define IDS_STRING5838                  5838
+#define IDS_STRING5839                  5839
+#define IDS_STRING5840                  5840
+#define IDS_STRING5841                  5841
+#define IDS_STRING5842                  5842
+#define IDS_STRING5843                  5843
+#define IDS_STRING5844                  5844
+#define IDS_STRING5845                  5845
+#define IDS_STRING5846                  5846
+#define IDS_STRING5847                  5847
+#define IDS_STRING5848                  5848
+#define IDS_STRING5849                  5849
+#define IDS_STRING5850                  5850
+#define IDS_STRING5851                  5851
+#define IDS_STRING5852                  5852
+#define IDS_STRING5853                  5853
+#define IDS_STRING5854                  5854
+#define IDS_STRING5855                  5855
+#define IDS_STRING5856                  5856
+#define IDS_STRING5857                  5857
+#define IDS_STRING5858                  5858
+#define IDS_STRING5859                  5859
+#define IDS_STRING5860                  5860
+#define IDS_STRING5861                  5861
+#define IDS_STRING5862                  5862
+#define IDS_STRING5863                  5863
+#define IDS_STRING5864                  5864
+#define IDS_STRING5865                  5865
+#define IDS_STRING5866                  5866
+#define IDS_STRING5867                  5867
+#define IDS_STRING5868                  5868
+#define IDS_STRING5869                  5869
+#define IDS_STRING5870                  5870
+#define IDS_STRING5871                  5871
+#define IDS_STRING5872                  5872
+#define IDS_STRING5873                  5873
+#define IDS_STRING5874                  5874
+#define IDS_STRING5875                  5875
+#define IDS_STRING5876                  5876
+#define IDS_STRING5877                  5877
+#define IDS_STRING5878                  5878
+#define IDS_STRING5879                  5879
+#define IDS_STRING5880                  5880
+#define IDS_STRING5881                  5881
+#define IDS_STRING5882                  5882
+#define IDS_STRING5883                  5883
+#define MENU_HELP                       32774
+#define MENU_OPEN                       32776
+#define MENU_CLOSE                      32777
+#define MENU_EXIT                       32778
+#define ID_MENUITEM32781                32781
+#define MENU_OPTION                     32781
+#define MNU_OPEN2                       32782
+#define MNU_DEBUGSeRIAL                 32783
+#define MNU_ANLYSIS                     32784
+#define MENU_TOFILE                     32785
+#define menu_des                        32786
+#define MENU_SEND_NULL                  32787
+#define MENU_OPEN3                      32788
+#define MENU_OPEN4                      32788
+#define MENU_THREAD_TEST                32789
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        137
+#define _APS_NEXT_COMMAND_VALUE         32790
+#define _APS_NEXT_CONTROL_VALUE         1021
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

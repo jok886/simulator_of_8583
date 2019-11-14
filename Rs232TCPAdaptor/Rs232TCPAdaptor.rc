@@ -1,0 +1,472 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+	"#ifdef _WIN32\r\n"
+	"LANGUAGE 4, 2\r\n"
+	"#pragma code_page(936)\r\n"
+	"#endif //_WIN32\r\n"
+	"#include ""res\\Rs232TCPAdaptor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+	"#include ""l.chs\\afxres.rc""  	// Standard components\r\n"
+	"#endif\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Rs232TCPAdaptor.ico"
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Rs232TCPAdaptor"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Rs232TCPAdaptor 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_RS232TCPADAPTOR_DIALOG DIALOGEX 0, 0, 320, 221
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Rs232适配器"
+MENU IDR_MENU1
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,1,29,155,127
+    CONTROL         "",IDC_MSCOMM3,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,172,111,25,25
+    EDITTEXT        IDC_EDIT1,1,3,219,24,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+END
+
+DLG_VIEW_MSG DIALOG DISCARDABLE  0, 0, 253, 200
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "报文详细信息"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,24,44,92,79
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "参数设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,6,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,21,50,14
+    COMBOBOX        CMB_MSG,25,8,97,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "报文",IDC_STATIC,4,8,18,13
+    GROUPBOX        "",IDC_STATIC,1,2,124,20
+    COMBOBOX        CMB_ROUTE,25,25,97,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "路由",IDC_STATIC,4,25,18,13
+    GROUPBOX        "",IDC_STATIC,1,19,124,20
+    GROUPBOX        "HOST",IDC_STATIC,1,42,179,49
+    EDITTEXT        IDC_PORT,27,69,147,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IP,27,53,147,11,ES_AUTOHSCROLL
+    LTEXT           "IP",IDC_STATIC,5,53,18,13
+    LTEXT           "PORT",IDC_STATIC,5,69,18,13
+END
+
+IDD_bitmap DIALOG DISCARDABLE  0, 0, 218, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BITMAP分析"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "生成BITMAP",BTN_GEN,164,17,50,13
+    PUSHBUTTON      "解析BITMAP",BTN_PARSEL,164,37,50,14
+    GROUPBOX        "结果",IDC_STATIC,3,67,212,52
+    EDITTEXT        EDT_RESULT,7,78,205,36,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    EDITTEXT        EDT_BITS,7,12,145,14,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        EDT_INDATA,7,29,145,27,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    GROUPBOX        "入口参数",IDC_STATIC,3,2,156,61
+    GROUPBOX        "控制",IDC_STATIC,160,2,55,63
+END
+
+IDD_COMMOND_DIALOG DIALOGEX 0, 0, 398, 223
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Debug"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,0,96,396,127
+    CONTROL         "",IDC_MSCOMM3,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,172,111,25,25
+    EDITTEXT        IDC_COMMAND,1,13,353,24,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    LTEXT           "结果：",IDC_STATIC,0,80,133,13
+    EDITTEXT        IDC_RESPOND,0,50,355,24,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    LTEXT           "响应",IDC_STATIC,0,37,133,13
+    LTEXT           "命令",IDC_STATIC,0,0,133,13
+    PUSHBUTTON      "增加",BTN_ADD,360,13,31,27
+    PUSHBUTTON      "发送",BTN_SEND,360,50,31,27
+END
+
+IDD_des DIALOG DISCARDABLE  0, 0, 257, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DES测试"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "加密",BTN_ENCRY,202,17,50,13
+    PUSHBUTTON      "解密",BTN_ENCODE,202,37,50,14
+    GROUPBOX        "结果",IDC_STATIC,3,68,194,52
+    EDITTEXT        EDT_TAG,7,78,184,36,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    EDITTEXT        EDT_KEY,46,20,145,12,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        EDT_SRC,46,44,145,12,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    GROUPBOX        "入口参数",IDC_STATIC,3,2,193,62
+    GROUPBOX        "控制",IDC_STATIC,199,2,55,63
+    LTEXT           "KEY",IDC_STATIC,25,21,17,12
+    LTEXT           "SOURCE",IDC_STATIC,10,43,30,12
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "080404B0"
+		BEGIN 
+			VALUE "CompanyName",     "\0"
+			VALUE "FileDescription", "Rs232TCPAdaptor Microsoft 基础类应用程序\0"
+			VALUE "FileVersion",     "1, 0, 0, 1\0"
+			VALUE "InternalName",    "Rs232TCPAdaptor\0"
+			VALUE "LegalCopyright",  "版权所有 (C) 2019\0"
+			VALUE "LegalTrademarks", "\0"
+			VALUE "OriginalFilename","Rs232TCPAdaptor.EXE\0"
+			VALUE "ProductName",     "Rs232TCPAdaptor 应用程序\0"
+			VALUE "ProductVersion",  "1, 0, 0, 1\0"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x0804, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    DLG_VIEW_MSG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 229
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 180
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_bitmap, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 215
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_COMMOND_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_des, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 254
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "控制(&O)"
+    BEGIN
+        MENUITEM "打开COM1",                    MENU_OPEN
+        MENUITEM "打开COM2",                    MNU_OPEN2
+        MENUITEM "关闭串口(&S)",                MENU_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "退出 (&X)",                   MENU_EXIT
+        MENUITEM "保存到文件",                  MENU_TOFILE
+        MENUITEM "打开COM4",                    MENU_OPEN4
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "属性(&P)",                    MENU_OPTION
+    END
+    MENUITEM "帮助(&H)",                    MENU_HELP
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "串口调试",                    MNU_DEBUGSeRIAL
+        MENUITEM "BITMAP分析",                  MNU_ANLYSIS
+        MENUITEM "DES测试",                     menu_des
+        MENUITEM "线程测试",                    MENU_THREAD_TEST
+    END
+    MENUITEM "发送空",                      MENU_SEND_NULL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RS232TCPADAPTOR_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM3, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0001, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0005, 0x0000, 
+    0
+END
+
+IDD_COMMOND_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM3, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Rs232TCPAdaptor(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    5820                    "扩展位图"
+    IDS_STRING5821          "主帐号"
+    IDS_STRING5822          "处理码"
+    IDS_STRING5823          "金额"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING5824          " "
+    IDS_STRING5825          " "
+    IDS_STRING5826          " 交易时间"
+    IDS_STRING5827          "手续费标记"
+    IDS_STRING5828          " "
+    IDS_STRING5829          " "
+    IDS_STRING5830          "系统流水号"
+    IDS_STRING5831          "时间"
+    IDS_STRING5832          "日期"
+    IDS_STRING5833          "失效期"
+    IDS_STRING5834          " "
+    IDS_STRING5835          " "
+    IDS_STRING5836          " "
+    IDS_STRING5837          " "
+    IDS_STRING5838          " "
+    IDS_STRING5839          " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING5840          " "
+    IDS_STRING5841          "输入方式"
+    IDS_STRING5842          " "
+    IDS_STRING5843          "NII"
+    IDS_STRING5844          "POS终端状态"
+    IDS_STRING5845          " "
+    IDS_STRING5846          " "
+    IDS_STRING5847          " "
+    IDS_STRING5848          " "
+    IDS_STRING5849          " "
+    IDS_STRING5850          " "
+    IDS_STRING5851          " "
+    IDS_STRING5852          "POS ID"
+    IDS_STRING5853          " "
+    IDS_STRING5854          "2磁道内容"
+    IDS_STRING5855          "3磁道内容"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING5856          "系统参考号"
+    IDS_STRING5857          "授权码"
+    IDS_STRING5858          "响应码"
+    IDS_STRING5859          "卡类型"
+    IDS_STRING5860          "终端号"
+    IDS_STRING5861          "商户号"
+    IDS_STRING5862          " "
+    IDS_STRING5863          " "
+    IDS_STRING5864          " "
+    IDS_STRING5865          " "
+    IDS_STRING5866          " "
+    IDS_STRING5867          "授款帐号"
+    IDS_STRING5868          "当前交易货币号"
+    IDS_STRING5869          " "
+    IDS_STRING5870          " "
+    IDS_STRING5871          "个人密码/PEK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING5872          " "
+    IDS_STRING5873          "手续费标记"
+    IDS_STRING5874          " "
+    IDS_STRING5875          " "
+    IDS_STRING5876          " "
+    IDS_STRING5877          " "
+    IDS_STRING5878          " "
+    IDS_STRING5879          "上送资料  MAC校验标志"
+    IDS_STRING5880          "操作员密码"
+    IDS_STRING5881          "撤销流水号"
+    IDS_STRING5882          "结算总额  批次号"
+    IDS_STRING5883          "MAC"
+END
+
+#endif
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\\Rs232TCPAdaptor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\\afxres.rc"  	// Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
